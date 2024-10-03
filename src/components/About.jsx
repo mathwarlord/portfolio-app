@@ -32,7 +32,7 @@ const About = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="flex justify-center lg:justify-start">
-            <p className="my-2 maxw-w-xl py-6 mb-4">
+            <p className="my-2 maxw-w-xl text-xl py-6 mb-4">
               {ABOUT_TEXT.map((text, index) => (
                 <p key={index} className="my-7">
                   {text}

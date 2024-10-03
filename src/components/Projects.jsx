@@ -22,10 +22,11 @@ const Projects = () => {
             className="block"
           >
             <motion.div
-              whileHover={{ scale: 1.025 }} // Мягкое увеличение на 2% при наведении
-              transition={{ type: 'spring', stiffness: 200, damping: 15 }} // Более мягкий переход
-              className="mb-8 flex flex-wrap lg:justify-center transform hover:shadow-md transition-shadow duration-500" // Легкая тень с более плавным переходом
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: 'spring', stiffness: 200, damping: 15 }}
+              className="mb-8 flex flex-wrap lg:justify-center transform transition-shadow duration-500"
               key={index}
+              style={{ minHeight: '150px', minWidth: '150px' }}
             >
               <motion.div
                 whileInView={{ opacity: 1, x: 0 }}
@@ -38,7 +39,7 @@ const Projects = () => {
                   width={150}
                   height={150}
                   alt={project.title}
-                  className="mb-6 rounded hover:scale-1025 transition-transform duration-500" // Мягкое увеличение изображения на 2%
+                  className="mb-6 rounded"
                 />
               </motion.div>
               <motion.div
